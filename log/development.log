@@ -1218,3 +1218,17 @@ Processing by ShotsController#index as HTML
 Completed 200 OK in 470ms (Views: 410.9ms | ActiveRecord: 3.7ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-09-24 00:45:44 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShotsController#index as HTML
+  Rendering shots/index.html.erb within layouts/application
+  Rendered shots/_hero.html.erb (4.4ms)
+  [1m[36mShot Load (0.7ms)[0m  [1m[34mSELECT "shots".* FROM "shots" ORDER BY created_at DESC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(DISTINCT "impressions"."request_hash") FROM "impressions" WHERE "impressions"."impressionable_id" = ? AND "impressions"."impressionable_type" = ?[0m  [["impressionable_id", 1], ["impressionable_type", "Shot"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."shot_id" = ?[0m  [["shot_id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = ?[0m  [["votable_id", 1], ["votable_type", "Shot"], ["vote_flag", "t"]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shots/index.html.erb within layouts/application (102.9ms)
+Completed 200 OK in 412ms (Views: 370.7ms | ActiveRecord: 4.4ms)
+
+
