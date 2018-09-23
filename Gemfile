@@ -40,6 +40,7 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'gravatar_image_tag'
 gem 'acts_as_votable', '~> 0.11.1'
 gem "fog-aws"
+gem "asset_sync"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

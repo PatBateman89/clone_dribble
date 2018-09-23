@@ -1232,3 +1232,364 @@ Processing by ShotsController#index as HTML
 Completed 200 OK in 412ms (Views: 370.7ms | ActiveRecord: 4.4ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-09-24 00:48:25 +0900
+Processing by ShotsController#index as HTML
+Completed 500 Internal Server Error in 12ms
+
+
+
+NameError - uninitialized constant CarrierWave::Storage::Fog:
+  app/uploaders/user_shot_uploader.rb:8:in `<class:UserShotUploader>'
+  app/uploaders/user_shot_uploader.rb:1:in `<top (required)>'
+  app/models/shot.rb:5:in `<class:Shot>'
+  app/models/shot.rb:1:in `<top (required)>'
+  app/controllers/shots_controller.rb:9:in `index'
+
+Started POST "/__better_errors/44561b63018697de/variables" for 127.0.0.1 at 2018-09-24 00:48:25 +0900
+Started GET "/" for 127.0.0.1 at 2018-09-24 01:01:05 +0900
+Processing by ShotsController#index as HTML
+Completed 500 Internal Server Error in 7ms
+
+
+
+NameError - uninitialized constant CarrierWave::Storage::Fog:
+  app/uploaders/user_shot_uploader.rb:8:in `<class:UserShotUploader>'
+  app/uploaders/user_shot_uploader.rb:1:in `<top (required)>'
+  app/models/shot.rb:5:in `<class:Shot>'
+  app/models/shot.rb:1:in `<top (required)>'
+  app/controllers/shots_controller.rb:9:in `index'
+
+Started POST "/__better_errors/d80674c6a9f49503/variables" for 127.0.0.1 at 2018-09-24 01:01:06 +0900
+Started GET "/" for 127.0.0.1 at 2018-09-24 01:06:03 +0900
+Processing by ShotsController#index as HTML
+Completed 500 Internal Server Error in 12ms
+
+
+
+NameError - uninitialized constant CarrierWave::Storage::Fog:
+  app/uploaders/user_shot_uploader.rb:8:in `<class:UserShotUploader>'
+  app/uploaders/user_shot_uploader.rb:1:in `<top (required)>'
+  app/models/shot.rb:5:in `<class:Shot>'
+  app/models/shot.rb:1:in `<top (required)>'
+  app/controllers/shots_controller.rb:9:in `index'
+
+Started POST "/__better_errors/e1fad743255f33da/variables" for 127.0.0.1 at 2018-09-24 01:06:04 +0900
+Started GET "/" for 127.0.0.1 at 2018-09-24 01:09:46 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShotsController#index as HTML
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant CarrierWave::Storage::Fog:
+  app/uploaders/user_shot_uploader.rb:8:in `<class:UserShotUploader>'
+  app/uploaders/user_shot_uploader.rb:1:in `<top (required)>'
+  app/models/shot.rb:5:in `<class:Shot>'
+  app/models/shot.rb:1:in `<top (required)>'
+  app/controllers/shots_controller.rb:9:in `index'
+
+Started POST "/__better_errors/b21713adaf89898d/variables" for 127.0.0.1 at 2018-09-24 01:09:46 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_impressions_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_impressions_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='poly_params_request_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='poly_params_request_index' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='controlleraction_session_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='controlleraction_session_index' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='controlleraction_ip_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='controlleraction_ip_index' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='controlleraction_request_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='controlleraction_request_index' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='poly_session_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='poly_session_index' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='poly_ip_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='poly_ip_index' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='poly_request_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='poly_request_index' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='impressionable_type_message_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='impressionable_type_message_index' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_votes_on_votable_id_and_votable_type_and_vote_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_votes_on_votable_id_and_votable_type_and_vote_scope' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_votes_on_voter_id_and_voter_type_and_vote_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_votes_on_voter_id_and_voter_type_and_vote_scope' AND type='index'
+[0m
+Started GET "/" for 127.0.0.1 at 2018-09-24 01:24:22 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShotsController#index as HTML
+  Rendering shots/index.html.erb within layouts/application
+  Rendered shots/_hero.html.erb (4.2ms)
+  [1m[36mShot Load (0.5ms)[0m  [1m[34mSELECT "shots".* FROM "shots" ORDER BY created_at DESC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(DISTINCT "impressions"."request_hash") FROM "impressions" WHERE "impressions"."impressionable_id" = ? AND "impressions"."impressionable_type" = ?[0m  [["impressionable_id", 1], ["impressionable_type", "Shot"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."shot_id" = ?[0m  [["shot_id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = ?[0m  [["votable_id", 1], ["votable_type", "Shot"], ["vote_flag", "t"]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shots/index.html.erb within layouts/application (141.1ms)
+Completed 200 OK in 581ms (Views: 549.5ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-09-24 01:24:35 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (108.5ms)
+Completed 200 OK in 147ms (Views: 143.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-09-24 01:24:37 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w0kvxvU9nMX3gWTYG4Wy3S/Rgpr/IJIJKVYn5+xIV0GGOgJQY72kG38PXvw67imNjUvdrwpWe7HAkhO24LqKYw==", "user"=>{"email"=>"hey@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "hey@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.4ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w0kvxvU9nMX3gWTYG4Wy3S/Rgpr/IJIJKVYn5+xIV0GGOgJQY72kG38PXvw67imNjUvdrwpWe7HAkhO24LqKYw==", "user"=>{"email"=>"hey@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 197ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-09-24 01:24:49 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MK5YIVL9WQmYWyGtFBMiaUiYVf3baoUhVBFdk25ij1Ab7HKw8NC7NepotwERtqhySlYyX4wGKA+liGM5Kkr1uQ==", "user"=>{"email"=>"dave@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "dave@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.3ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MK5YIVL9WQmYWyGtFBMiaUiYVf3baoUhVBFdk25ij1Ab7HKw8NC7NepotwERtqhySlYyX4wGKA+liGM5Kkr1uQ==", "user"=>{"email"=>"dave@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 166ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-09-24 01:24:52 +0900
+Processing by RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 48ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-24 01:24:55 +0900
+Processing by ShotsController#index as HTML
+  Rendering shots/index.html.erb within layouts/application
+  Rendered shots/_hero.html.erb (0.6ms)
+  [1m[36mShot Load (0.1ms)[0m  [1m[34mSELECT "shots".* FROM "shots" ORDER BY created_at DESC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(DISTINCT "impressions"."request_hash") FROM "impressions" WHERE "impressions"."impressionable_id" = ? AND "impressions"."impressionable_type" = ?[0m  [["impressionable_id", 1], ["impressionable_type", "Shot"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."shot_id" = ?[0m  [["shot_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = ?[0m  [["votable_id", 1], ["votable_type", "Shot"], ["vote_flag", "t"]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shots/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 43ms (Views: 40.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-09-24 01:24:58 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 58ms (Views: 56.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-09-24 01:25:03 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4aTvJmjbLx0JfCZdgTF7Y4ZO1dCs5vBFcr2cqNyutFuk18Kw/lsXw4HyHHmgWuAzJNSK5VmQGf2beaj50FxpeQ==", "user"=>{"email"=>"john@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "john@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-09-23 16:25:03.336996"], ["sign_in_count", 2], ["updated_at", "2018-09-23 16:25:03.337814"], ["id", 1]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 131ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-24 01:25:03 +0900
+Processing by ShotsController#index as HTML
+  Rendering shots/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shots/_hero.html.erb (1.4ms)
+  [1m[36mShot Load (0.1ms)[0m  [1m[34mSELECT "shots".* FROM "shots" ORDER BY created_at DESC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(DISTINCT "impressions"."request_hash") FROM "impressions" WHERE "impressions"."impressionable_id" = ? AND "impressions"."impressionable_type" = ?[0m  [["impressionable_id", 1], ["impressionable_type", "Shot"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."shot_id" = ?[0m  [["shot_id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."voter_id" = ? AND "votes"."voter_type" = ? AND "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_scope" IS NULL AND "votes"."vote_flag" = ?[0m  [["voter_id", 1], ["voter_type", "User"], ["votable_id", 1], ["votable_type", "Shot"], ["vote_flag", "t"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = ?[0m  [["votable_id", 1], ["votable_type", "Shot"], ["vote_flag", "t"]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shots/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 51ms (Views: 48.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/shots/1" for 127.0.0.1 at 2018-09-24 01:25:05 +0900
+Processing by ShotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShot Load (0.2ms)[0m  [1m[34mSELECT  "shots".* FROM "shots" WHERE "shots"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mImpression Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "impressions" WHERE "impressions"."impressionable_type" = ? AND "impressions"."impressionable_id" = ? AND "impressions"."session_hash" = ? LIMIT ?[0m  [["impressionable_type", "Shot"], ["impressionable_id", 1], ["session_hash", "7c4e85c262c201f342a74862a8b05557"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mShot Load (0.1ms)[0m  [1m[34mSELECT  "shots".* FROM "shots" WHERE "shots"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (2.3ms)[0m  [1m[32mINSERT INTO "impressions" ("impressionable_type", "impressionable_id", "user_id", "controller_name", "action_name", "request_hash", "ip_address", "session_hash", "referrer", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["impressionable_type", "Shot"], ["impressionable_id", 1], ["user_id", 1], ["controller_name", "shots"], ["action_name", "show"], ["request_hash", "a4aac6e8cfb925980d455e42550bb4c6f2349536088576aa4256a5b5ef335b72"], ["ip_address", "127.0.0.1"], ["session_hash", "7c4e85c262c201f342a74862a8b05557"], ["referrer", "http://localhost:3000/"], ["created_at", "2018-09-23 16:25:05.917925"], ["updated_at", "2018-09-23 16:25:05.917925"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  Rendering shots/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."shot_id" = ?[0m  [["shot_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."shot_id" = ?[0m  [["shot_id", 1]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (25.5ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(DISTINCT "impressions"."request_hash") FROM "impressions" WHERE "impressions"."impressionable_id" = ? AND "impressions"."impressionable_type" = ?[0m  [["impressionable_id", 1], ["impressionable_type", "Shot"]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."shot_id" = ?[0m  [["shot_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."voter_id" = ? AND "votes"."voter_type" = ? AND "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_scope" IS NULL AND "votes"."vote_flag" = ?[0m  [["voter_id", 1], ["voter_type", "User"], ["votable_id", 1], ["votable_type", "Shot"], ["vote_flag", "t"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = ?[0m  [["votable_id", 1], ["votable_type", "Shot"], ["vote_flag", "t"]]
+  Rendered shots/show.html.erb within layouts/application (37.6ms)
+Completed 200 OK in 105ms (Views: 62.9ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/shots/new" for 127.0.0.1 at 2018-09-24 01:25:08 +0900
+Processing by ShotsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering shots/new.html.erb within layouts/application
+  Rendered shots/_form.html.erb (6.3ms)
+  Rendered shots/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 41ms (Views: 34.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/shots" for 127.0.0.1 at 2018-09-24 01:25:22 +0900
+Processing by ShotsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2zl8rNFuCqP+6CHAUuW/GU6vVelPu0XMglnsTri+9oJsxO1gMJU4X3/uxgpr90YISxNYwnTWLi1Z9cr4yO9cbg==", "shot"=>{"user_shot"=>#<ActionDispatch::Http::UploadedFile:0x007f7fd85ced10 @tempfile=#<Tempfile:/var/folders/tb/n89qc6nj7hs783t7t0kdjk0r0000gn/T/RackMultipart20180924-56515-1kv8xri.jpg>, @original_filename="crystal-palace-3646684_1280.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"shot[user_shot]\"; filename=\"crystal-palace-3646684_1280.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"Test 2", "description"=>"Hello"}, "commit"=>"Create Shot"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "shots" ("title", "description", "user_id", "created_at", "updated_at", "user_shot") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Test 2"], ["description", "Hello"], ["user_id", 1], ["created_at", "2018-09-23 16:25:23.443223"], ["updated_at", "2018-09-23 16:25:23.443223"], ["user_shot", "crystal-palace-3646684_1280.jpg"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/shots/2
+Completed 302 Found in 497ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/shots/2" for 127.0.0.1 at 2018-09-24 01:25:23 +0900
+Processing by ShotsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mShot Load (0.1ms)[0m  [1m[34mSELECT  "shots".* FROM "shots" WHERE "shots"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mImpression Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "impressions" WHERE "impressions"."impressionable_type" = ? AND "impressions"."impressionable_id" = ? AND "impressions"."session_hash" = ? LIMIT ?[0m  [["impressionable_type", "Shot"], ["impressionable_id", 2], ["session_hash", "7c4e85c262c201f342a74862a8b05557"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mShot Load (0.1ms)[0m  [1m[34mSELECT  "shots".* FROM "shots" WHERE "shots"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "impressions" ("impressionable_type", "impressionable_id", "user_id", "controller_name", "action_name", "request_hash", "ip_address", "session_hash", "referrer", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["impressionable_type", "Shot"], ["impressionable_id", 2], ["user_id", 1], ["controller_name", "shots"], ["action_name", "show"], ["request_hash", "85fb23742181f5ff892c1744c1425b3c28c0763c4a033c0c6934a3c8a16a1fb0"], ["ip_address", "127.0.0.1"], ["session_hash", "7c4e85c262c201f342a74862a8b05557"], ["referrer", "http://localhost:3000/shots/new"], ["created_at", "2018-09-23 16:25:23.465324"], ["updated_at", "2018-09-23 16:25:23.465324"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  Rendering shots/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."shot_id" = ?[0m  [["shot_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."shot_id" = ?[0m  [["shot_id", 2]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (5.3ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(DISTINCT "impressions"."request_hash") FROM "impressions" WHERE "impressions"."impressionable_id" = ? AND "impressions"."impressionable_type" = ?[0m  [["impressionable_id", 2], ["impressionable_type", "Shot"]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."shot_id" = ?[0m  [["shot_id", 2]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."voter_id" = ? AND "votes"."voter_type" = ? AND "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_scope" IS NULL AND "votes"."vote_flag" = ?[0m  [["voter_id", 1], ["voter_type", "User"], ["votable_id", 2], ["votable_type", "Shot"], ["vote_flag", "t"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = ?[0m  [["votable_id", 2], ["votable_type", "Shot"], ["vote_flag", "t"]]
+  Rendered shots/show.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 51ms (Views: 42.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-24 01:25:26 +0900
+Processing by ShotsController#index as HTML
+  Rendering shots/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shots/_hero.html.erb (1.7ms)
+  [1m[36mShot Load (0.1ms)[0m  [1m[34mSELECT "shots".* FROM "shots" ORDER BY created_at DESC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(DISTINCT "impressions"."request_hash") FROM "impressions" WHERE "impressions"."impressionable_id" = ? AND "impressions"."impressionable_type" = ?[0m  [["impressionable_id", 2], ["impressionable_type", "Shot"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."shot_id" = ?[0m  [["shot_id", 2]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."voter_id" = ? AND "votes"."voter_type" = ? AND "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_scope" IS NULL AND "votes"."vote_flag" = ?[0m  [["voter_id", 1], ["voter_type", "User"], ["votable_id", 2], ["votable_type", "Shot"], ["vote_flag", "t"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = ?[0m  [["votable_id", 2], ["votable_type", "Shot"], ["vote_flag", "t"]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(DISTINCT "impressions"."request_hash") FROM "impressions" WHERE "impressions"."impressionable_id" = ? AND "impressions"."impressionable_type" = ?[0m  [["impressionable_id", 1], ["impressionable_type", "Shot"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."shot_id" = ?[0m  [["shot_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."voter_id" = ? AND "votes"."voter_type" = ? AND "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_scope" IS NULL AND "votes"."vote_flag" = ?[0m  [["voter_id", 1], ["voter_type", "User"], ["votable_id", 1], ["votable_type", "Shot"], ["vote_flag", "t"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = ?[0m  [["votable_id", 1], ["votable_type", "Shot"], ["vote_flag", "t"]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shots/index.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 49ms (Views: 45.0ms | ActiveRecord: 1.9ms)
+
+
