@@ -1142,3 +1142,79 @@ Completed 200 OK in 344ms (Views: 308.6ms | ActiveRecord: 3.3ms)
             FROM sqlite_temp_master
             WHERE name='index_votes_on_voter_id_and_voter_type_and_vote_scope' AND type='index'
 [0m
+Started GET "/" for 127.0.0.1 at 2018-09-24 00:19:29 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShotsController#index as HTML
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant CarrierWave::Storage::Fog:
+  app/uploaders/user_shot_uploader.rb:8:in `<class:UserShotUploader>'
+  app/uploaders/user_shot_uploader.rb:1:in `<top (required)>'
+  app/models/shot.rb:5:in `<class:Shot>'
+  app/models/shot.rb:1:in `<top (required)>'
+  app/controllers/shots_controller.rb:9:in `index'
+
+Started POST "/__better_errors/445a090c3602bf54/variables" for 127.0.0.1 at 2018-09-24 00:19:29 +0900
+Started POST "/__better_errors/445a090c3602bf54/variables" for 127.0.0.1 at 2018-09-24 00:19:40 +0900
+Started GET "/" for 127.0.0.1 at 2018-09-24 00:25:59 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShotsController#index as HTML
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant CarrierWave::Storage::Fog:
+  app/uploaders/user_shot_uploader.rb:8:in `<class:UserShotUploader>'
+  app/uploaders/user_shot_uploader.rb:1:in `<top (required)>'
+  app/models/shot.rb:5:in `<class:Shot>'
+  app/models/shot.rb:1:in `<top (required)>'
+  app/controllers/shots_controller.rb:9:in `index'
+
+Started POST "/__better_errors/f14f7b41b7c621c7/variables" for 127.0.0.1 at 2018-09-24 00:26:00 +0900
+Started POST "/__better_errors/f14f7b41b7c621c7/variables" for 127.0.0.1 at 2018-09-24 00:26:22 +0900
+Started GET "/" for 127.0.0.1 at 2018-09-24 00:28:52 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShotsController#index as HTML
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant CarrierWave::Storage::Fog:
+  app/uploaders/user_shot_uploader.rb:8:in `<class:UserShotUploader>'
+  app/uploaders/user_shot_uploader.rb:1:in `<top (required)>'
+  app/models/shot.rb:5:in `<class:Shot>'
+  app/models/shot.rb:1:in `<top (required)>'
+  app/controllers/shots_controller.rb:9:in `index'
+
+Started POST "/__better_errors/1fdb311dbe7605e1/variables" for 127.0.0.1 at 2018-09-24 00:28:52 +0900
+Started POST "/__better_errors/1fdb311dbe7605e1/variables" for 127.0.0.1 at 2018-09-24 00:29:47 +0900
+Started GET "/" for 127.0.0.1 at 2018-09-24 00:29:57 +0900
+Processing by ShotsController#index as HTML
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant CarrierWave::Storage::Fog:
+  app/uploaders/user_shot_uploader.rb:8:in `<class:UserShotUploader>'
+  app/uploaders/user_shot_uploader.rb:1:in `<top (required)>'
+  app/models/shot.rb:5:in `<class:Shot>'
+  app/models/shot.rb:1:in `<top (required)>'
+  app/controllers/shots_controller.rb:9:in `index'
+
+Started POST "/__better_errors/346764d75e1a9ab9/variables" for 127.0.0.1 at 2018-09-24 00:29:58 +0900
+Started GET "/" for 127.0.0.1 at 2018-09-24 00:40:44 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShotsController#index as HTML
+  Rendering shots/index.html.erb within layouts/application
+  Rendered shots/_hero.html.erb (4.0ms)
+  [1m[36mShot Load (0.5ms)[0m  [1m[34mSELECT "shots".* FROM "shots" ORDER BY created_at DESC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(DISTINCT "impressions"."request_hash") FROM "impressions" WHERE "impressions"."impressionable_id" = ? AND "impressions"."impressionable_type" = ?[0m  [["impressionable_id", 1], ["impressionable_type", "Shot"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."shot_id" = ?[0m  [["shot_id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = ?[0m  [["votable_id", 1], ["votable_type", "Shot"], ["vote_flag", "t"]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shots/index.html.erb within layouts/application (129.0ms)
+Completed 200 OK in 470ms (Views: 410.9ms | ActiveRecord: 3.7ms)
+
+
