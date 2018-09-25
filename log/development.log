@@ -2896,3 +2896,56 @@ Processing by ShotsController#index as HTML
 Completed 200 OK in 47ms (Views: 45.1ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-09-25 19:58:22 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShotsController#index as HTML
+  Rendering shots/index.html.erb within layouts/application
+  Rendered shots/_hero.html.erb (3.9ms)
+  [1m[36mShot Load (0.4ms)[0m  [1m[34mSELECT "shots".* FROM "shots" ORDER BY created_at DESC[0m
+  Rendered shots/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 583ms (Views: 527.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-25 19:58:29 +0900
+Processing by ShotsController#index as HTML
+  Rendering shots/index.html.erb within layouts/application
+  Rendered shots/_hero.html.erb (0.6ms)
+  [1m[36mShot Load (0.1ms)[0m  [1m[34mSELECT "shots".* FROM "shots" ORDER BY created_at DESC[0m
+  Rendered shots/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 27ms (Views: 25.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-25 19:58:54 +0900
+Processing by ShotsController#index as HTML
+  Rendering shots/index.html.erb within layouts/application
+  Rendered shots/_hero.html.erb (0.5ms)
+  [1m[36mShot Load (0.1ms)[0m  [1m[34mSELECT "shots".* FROM "shots" ORDER BY created_at DESC[0m
+  Rendered shots/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 68ms (Views: 66.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-25 19:58:58 +0900
+Processing by ShotsController#index as HTML
+  Rendering shots/index.html.erb within layouts/application
+  Rendered shots/_hero.html.erb (0.5ms)
+  [1m[36mShot Load (0.1ms)[0m  [1m[34mSELECT "shots".* FROM "shots" ORDER BY created_at DESC[0m
+  Rendered shots/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-09-25 19:59:00 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (112.0ms)
+Completed 200 OK in 171ms (Views: 156.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-09-25 19:59:02 +0900
+Processing by RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 42ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
