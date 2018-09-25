@@ -20,12 +20,12 @@
       <p class="alert"><%= alert %></p>
     </div>
     <% end %>
-     <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <%= link_to root_path, class:"navbar-item" do %>
           <h1 class="title is-5 has-text-white">Dribbble Clone</h1>
         <% end  %>
-      <div class="navbar-burger burger" data-target="navbar">
+      <div class="navbar-burger" data-target="navbar">
         <span></span>
         <span></span>
         <span></span>
@@ -33,12 +33,11 @@
     </div>
 
       <div id="navbar" class="navbar-menu">
-
         <div class="navbar-start">
           <div class="navbar-item">
             <div class="field is-grouped">
               <p class="control">
-                <%= link_to 'Shots', root_path , class:"button is-dark" %>
+                <%= link_to 'Shots', root_path , class:"button is-primary" %>
               </p>
             </div>
           </div>
@@ -55,24 +54,24 @@
                 <% end %>
               </p>
               <p class="control">
-                <%= link_to current_user.name, edit_user_registration_path, class:"button is-dark" %>
+                <%= link_to current_user.name, edit_user_registration_path, class:"button is-primary" %>
               </p>
               <p class="control">
-                <%= link_to "Log Out", destroy_user_session_path, method: :delete, class:"button is-dark" %>
+                <%= link_to "Log Out", destroy_user_session_path, method: :delete, class:"button is-primary" %>
               </p>
               <% else %>
               <p class="control">
-                 <%= link_to "Sign In", new_user_session_path, class:"button is-dark" %>
+                 <%= link_to "Sign In", new_user_session_path, class:"button is-primary" %>
               </p>
               <p class="control">
-                <%= link_to "Sign up", new_user_registration_path, class:"button is-dark"%>
+                <%= link_to "Sign up", new_user_registration_path, class:"button is-primary"%>
               </p>
               <% end %>
             </div>
           </div>
         </div>
       </div>
-    </nav> 
+    </nav>
 
     <%= yield %>
   </body>
