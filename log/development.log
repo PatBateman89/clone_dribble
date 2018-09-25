@@ -2949,3 +2949,12 @@ Processing by RegistrationsController#new as HTML
 Completed 200 OK in 42ms (Views: 40.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-09-25 20:02:04 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (99.4ms)
+Completed 200 OK in 480ms (Views: 443.7ms | ActiveRecord: 1.0ms)
+
+
